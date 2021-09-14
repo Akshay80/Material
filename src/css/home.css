@@ -1,0 +1,8 @@
+#images:hover{
+    transform: scale(1.1);
+    transition: .6s ease;
+    cursor:pointer;
+}
+#links:hover{
+    cursor: pointer;
+}

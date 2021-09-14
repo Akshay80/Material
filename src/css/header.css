@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#menus a {
+  color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.MuiIconButton-edgeStart {
+  margin-left: unset!important;
+}
+
+
+#menuIcon:hover{
+ cursor:pointer
+}
+
+@media (max-width:768px) {
+  #menus{
+    display: none;
+  }
+ 
+  #menuIcon {
+    display: block;
+  }
+
+  .MuiMenuItem-root {
+    min-height: unset;
+}
+
+}
+
+@media (min-width:769px) {
+  #menuIcon {
+    display: none;
+  }
+  
+}
+@media (min-width: 600px) and (max-width:768px)
+{
+.MuiMenuItem-root {
+    min-height: unset;
+}
+}
+.MuiIconButton-root{
+  padding: unset;
+}
+
