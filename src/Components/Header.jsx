@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Toolbar, Button, IconButton, AppBar, Grid, Drawer, MenuItem, Typography } from "@material-ui/core";
+import { Toolbar, Button, IconButton, AppBar, Drawer, MenuItem, Typography } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import logos from "../images/logo.png";
 import "../css/header.css";
