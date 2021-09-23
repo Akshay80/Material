@@ -22,7 +22,7 @@ const [fname, setFname] = useState('');
 const [lname, setLname] = useState('');
 const [mail, setMail] = useState('');
 
-const notify = () => toast.success('🦄 Wow so easy!', {
+const notify = () => toast.success('Data Saved!', {
   position: "bottom-center",
   autoClose: 4000,
   hideProgressBar: false,
@@ -44,6 +44,7 @@ const handleSubmit = () => {
     email: mail
   }
 
+  console.log(datas)
   notify();
 
   // alert(JSON.stringify(datas));
