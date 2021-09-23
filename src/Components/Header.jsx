@@ -5,8 +5,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import logos from "../images/logo.png";
 import "../css/header.css";
 import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
-import CallIcon from "@material-ui/icons/Call";
+import RssFeedIcon from '@material-ui/icons/RssFeed';
+import VideocamIcon from '@material-ui/icons/Videocam';
 import SettingsIcon from "@material-ui/icons/Settings";
 import InfoIcon from "@material-ui/icons/Info";
 
@@ -53,7 +53,6 @@ export default function Header() {
   }
 
 
-
   return (
     <div>
       <AppBar position="static">
@@ -70,22 +69,22 @@ export default function Header() {
           <div id="menus" style={{ flexGrow: 1, textAlign: "end", float: "right", paddingRight: 15 }}>
             <Link to="/">
             <Button id="btn" color="inherit" variant="outlined" className={classes.Btns}>
-              Home
+              Videos
             </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/news">
               <Button color="inherit" variant="outlined" className={classes.Btns}>
-                Contact
+                News
               </Button>
             </Link>
-              <Link to="/services">
-            <Button color="inherit" variant="outlined" className={classes.Btns}>
-              Services
-            </Button>
-            </Link>
-            <Link to="/about">
+              <Link to="/about">
             <Button color="inherit" variant="outlined" className={classes.Btns}>
               About
+            </Button>
+            </Link>
+            <Link to="/soon">
+            <Button color="inherit" variant="outlined" className={classes.Btns}>
+              Coming soon...
             </Button>
             </Link>
           </div>
@@ -103,28 +102,28 @@ export default function Header() {
 
       <Link to="/" className={classes.links}>
       <MenuItem className={classes.menuItems}>
-      <HomeIcon className={classes.icn}/>
+      <VideocamIcon className={classes.icn}/>
       <Typography align="right">
-       Home
+       Video
        </Typography>
       </MenuItem>
       </Link>
 
-      <Link to="/contact" className={classes.links}>
+      <Link to="/news" className={classes.links}>
       <MenuItem className={classes.menuItems}>
-      <CallIcon className={classes.icn}/> Contact
-      </MenuItem>
-      </Link>
-
-      <Link to="/services" className={classes.links}>
-      <MenuItem className={classes.menuItems}>
-      <SettingsIcon className={classes.icn}/> Services
+      <RssFeedIcon className={classes.icn}/> News
       </MenuItem>
       </Link>
 
       <Link to="/about" className={classes.links}>
       <MenuItem className={classes.menuItems}>
       <InfoIcon className={classes.icn}/> About
+      </MenuItem>
+      </Link>
+
+      <Link to="/soon" className={classes.links}>
+      <MenuItem className={classes.menuItems}>
+      <SettingsIcon className={classes.icn}/> Coming soon
       </MenuItem>
       </Link>
 

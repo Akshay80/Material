@@ -8,7 +8,19 @@ import '../css/home.css';
 
 const Home = () => {
 return(
+  <React.Fragment>
+     <Typography
+        variant="h4"
+        gutterBottom
+        align="center"
+        style={{paddingTop:40}}
+        className="headline-float"
+      >
+         Videos
+      </Typography>
     <Grid container justifyContent="center" spacing={20}>
+     
+       
     {data.map((item, index) => (
       <Box key={index} width={210} marginRight={0.5} my={5}>
         {item ? (
@@ -23,6 +35,7 @@ return(
         {item ? (
           <Box pr={2}>
             <Link href={item.links} color="inherit" id="links" target="_blank">
+            
             <Typography gutterBottom variant="body2" style={{marginTop: 15}}>
               {item.title}
             </Typography>
@@ -42,6 +55,7 @@ return(
       </Box>
     ))}
   </Grid>
+</React.Fragment>
 )
 }
 
