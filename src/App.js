@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import Header from "./Components/Header";
 import Videos from "./Components/Videos";
 import About from "./Components/About";
@@ -8,7 +7,6 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Footer from "./Components/Footer";
 import CookieConsent from "react-cookie-consent";
 import React from "react";
-// import './App.css';
 
 <>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
