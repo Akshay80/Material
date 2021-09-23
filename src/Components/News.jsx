@@ -56,7 +56,7 @@ const News = () => {
 
   const fetchdata=async()=>{
     setLoading(true)
-    const response=await axios(`/top-headlines?sources=google-news-in&apiKey=${apiKey}`);
+    const response=await axios(`https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=${apiKey}`);
     setData(response.data.articles)
     setLoading(false)    
   }
