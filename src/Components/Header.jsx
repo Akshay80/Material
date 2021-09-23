@@ -64,7 +64,7 @@ export default function Header() {
             aria-label="menu"
             disableRipple={true}
           >
-            <img src={logos} alt="logo"height="80" width="80" />
+            <img src={logos} alt="logo" height="80" width="80" />
           </IconButton>
           <div id="menus" style={{ flexGrow: 1, textAlign: "end", float: "right", paddingRight: 15 }}>
             <Link to="/">
