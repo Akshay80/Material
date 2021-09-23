@@ -46,7 +46,7 @@ const News = () => {
   
   useEffect(() => {
     fetchdata();
-  }, [])
+  })
 
   // yesh@leaplogix.in 
 
