@@ -39,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
 
 const News = () => {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
   const [data,setData]=useState([])
   const [loading, setLoading] = useState(false);
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -57,7 +56,7 @@ const News = () => {
 
   const fetchdata=async()=>{
     setLoading(true)
-    const response=await axios(`/top-headlines?sources=google-news-in&apiKey=19afe08dc8724fabb3a6c5c9cdc9b2c6`);
+    const response=await axios(`/top-headlines?sources=google-news-in&apiKey=${apiKey}`);
     setData(response.data.articles)
     setLoading(false)    
   }
