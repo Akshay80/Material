@@ -1,6 +1,5 @@
 import React from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-import { Container, Grid } from '@material-ui/core';
  
 
 const containerStyle = { 
